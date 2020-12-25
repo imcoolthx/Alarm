@@ -1,0 +1,136 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('digital-7 (mono).ttf');
+   }
+
+body {
+    overflow: hidden;
+}
+/* START OPTIONS */
+#start_options{
+    text-align: center;
+    display: block;
+}
+
+h1 {
+    margin-bottom:50px;
+    font-size: 80px;
+}
+
+.button {
+    width: 45%;
+    height: 500px;
+    position: relative;
+    font-size: 50px;
+}
+
+/* TIMER SCREEN */
+#timer_screen {
+    display: none;
+    margin: 0px 50px;
+}
+
+.intro p {
+    display: inline-block;
+}
+
+.left_intro {
+    font-size: 70px;
+    margin: 6px;
+    font-weight: bold;
+}
+
+.right_intro {
+    font-size: 40px;
+    position: relative;
+    left:15%;
+}
+
+/* DISPLAY DIGITS DIV */
+.display_digits { 
+    margin: 1.5% 0%; 
+    text-align: center;
+    font-family:'digital-clock-font';
+    display: inline-grid;
+    width:100%;
+}
+
+.display_digits input {
+    width:363.45px;
+    height:395.2px;
+    opacity: 0%;
+}
+
+.layer1, .layer2 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.numbers,.colon {
+    font-size: 400px;
+}
+
+#timer_start_btn {
+    margin-top: 3em;
+    width:100%;
+    height: 4em;
+}
+
+/* ALARM SCREEN */
+#alarm_screen {
+    display: none;
+    margin: 0px 50px;
+}
+
+.alarm_display_digits { 
+    margin: 5% 0%; 
+    text-align: center;
+    font-family:'digital-clock-font';
+    display: inline-grid;
+    width:100%;
+}
+
+.alarm_layer2 input {
+    width: 363.64px;
+    height: 395.2px;
+    opacity: 0%;
+}
+
+.alarm_layer1, .alarm_layer2 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+#alarm_counting_display {
+    visibility: hidden;
+    position: relative;
+    width: 50%;
+    height: 400px;
+    top: -550px;
+    left: 25%;
+    z-index: 2;
+    font-size: 50px;
+    background: aliceblue;
+    text-align: center;
+    border: 10px solid darkgreen;
+}
+
+#alarm_btn {
+    margin-top: 2em;
+    width:100%;
+    height: 4em;
+}
+
+#alarm_counting_para {
+    padding-top: 30px;
+}
+
+#alarm_counting_btn {
+    width: 150px;
+    height: 30px;
+    position: relative;
+    top: 67px;
+}
+
